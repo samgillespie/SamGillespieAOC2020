@@ -5,21 +5,21 @@ import (
 	"log"
 	"time"
 
-	lib "./lib"
+	lib "../lib"
 )
 
 func main() {
 	start := time.Now()
 
 	data := lib.ReadInputAsInt(1)
-	part1(data)
-	part2(data)
+	q1part1(data)
+	q1part2(data)
 	elapsed := time.Since(start)
 
 	log.Printf("Main took %s", elapsed)
 }
 
-func part1(data []int) {
+func q1part1(data []int) {
 	// Part 1
 	for i := 0; i < len(data); i++ {
 		for j := i + 1; j < len(data); j++ {
@@ -33,7 +33,8 @@ func part1(data []int) {
 	}
 }
 
-func part2(data []int) {
+func q1part2(data []int) {
+	// Part 2
 	for i := 0; i < len(data); i++ {
 		for j := i + 1; j < len(data); j++ {
 			for k := j + 1; k < len(data); k++ {
