@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"strconv"
 	"strings"
 	"time"
@@ -18,7 +17,7 @@ func main() {
 	q2part2(data)
 	elapsed := time.Since(start)
 
-	log.Printf("Main took %s", elapsed)
+	fmt.Printf("Main took %s", elapsed)
 }
 
 func q2part1(data []string) {

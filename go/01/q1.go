@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"time"
 
 	lib "../lib"
@@ -16,7 +15,7 @@ func main() {
 	q1part2(data)
 	elapsed := time.Since(start)
 
-	log.Printf("Main took %s", elapsed)
+	fmt.Printf("Main took %s", elapsed)
 }
 
 func q1part1(data []int) {
