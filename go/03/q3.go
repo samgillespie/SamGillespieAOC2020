@@ -43,9 +43,7 @@ func walk(data []string, x_step int, y_step int) int {
 }
 
 func q3part1(data []string) {
-
 	trees := walk(data, 3, 1)
-
 	fmt.Println("Question 3 Part 1 Solution:")
 	fmt.Println(trees)
 }
