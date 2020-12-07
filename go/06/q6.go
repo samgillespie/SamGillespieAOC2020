@@ -26,7 +26,6 @@ func add_letter_to_set(list []byte, letter byte) []byte {
 	}
 
 	return append(list, letter)
-
 }
 
 func valid_characters(mapping map[byte]int, people_count int) int {
