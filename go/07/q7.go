@@ -108,20 +108,12 @@ func q7part1(data []string) {
 			counter += 1
 		}
 	}
-	fmt.Println("Question 7 Part 2 Solution:")
+	fmt.Println("Question 7 Part 1 Solution:")
 	fmt.Println(counter)
 }
 
 func q7part2(data []string) {
 	bag_map := make(map[string]*bag)
-
-	for _, row := range data {
-		bag_map = AddRowToBagMap(bag_map, row)
-	}
-
-	for _, row := range data {
-		bag_map = AddRowToBagMap(bag_map, row)
-	}
 
 	for _, row := range data {
 		bag_map = AddRowToBagMap(bag_map, row)
