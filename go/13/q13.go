@@ -81,6 +81,7 @@ func q13part2(timestamp int, buses []string) {
 			i_values = append(i_values, indexNumber)
 		}
 	}
+	solution, _ := chineseRemainderTheorem(i_values, n_values)
 	fmt.Println("Day 13 Part 2 Solution:")
-	fmt.Println(chineseRemainderTheorem(i_values, n_values))
+	fmt.Println(solution)
 }
