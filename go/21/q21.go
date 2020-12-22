@@ -13,8 +13,7 @@ func main() {
 	start := time.Now()
 
 	data := lib.ReadInputAsStr(21)
-	q21part1(data)
-	q21part2(data)
+	SolveRecipes(data)
 	elapsed := time.Since(start)
 
 	fmt.Printf("Main took %s", elapsed)
@@ -201,7 +200,7 @@ func CalculateSolution(recipes []Recipe, allergens []string) map[string]string {
 	return solution
 }
 
-func q21part1(data []string) {
+func SolveRecipes(data []string) {
 	recipes, allergens, ingredients := ParseInput(data)
 	noAllergens := FindNoAllergens(ingredients, allergens, recipes)
 	totalScore := 0
@@ -230,7 +229,4 @@ func q21part1(data []string) {
 	}
 	fmt.Println("Day 21 Part 2 Solution")
 	fmt.Println(submission[0 : len(submission)-1]) // Remove trailing comma
-}
-
-func q21part2(data []string) {
 }
